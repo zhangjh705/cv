@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Junhao Zhang | HKU Postdoctoral Researcher</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">JZ</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Junhao Zhang</h1>
+      <p class="hero-title">Postdoctoral Research Fellow at HKU</p>
+      <p class="hero-desc">Researching MRI reconstruction with deep learning. Passionate about medical imaging and AI-driven solutions for healthcare.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-block">
+        <div class="code-header">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        </div>
+        <pre><code><span class="kw">const</span> <span class="var">researcher</span> = {
+  <span class="prop">name</span>: <span class="str">"Junhao Zhang"</span>,
+  <span class="prop">field</span>: <span class="str">"MRI Reconstruction"</span>,
+  <span class="prop">tools</span>: [<span class="str">"Python"</span>, <span class="str">"Deep Learning"</span>],
+  <span class="fn">reconstruct</span>: () => <span class="str">"🏥"</span>
+};</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a Postdoctoral Research Fellow at The University of Hong Kong, working in the Electrical and Electronic Engineering department. My research focuses on magnetic resonance imaging (MRI), including compressed sensing, parallel imaging, low-rank reconstruction, abdominal and cardiac dynamic reconstruction, interventional MRI reconstruction, and image super-resolution.</p>
+          <p>I hold a Ph.D. in Electrical and Electronic Engineering from The University of Hong Kong, an M.S. in Biomedical Engineering from Columbia University, and a B.S. in Biomedical Engineering from Xi'an Jiaotong University. I'm passionate about applying deep learning and AI to solve challenges in medical imaging and healthcare.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Years Research</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Journal Papers</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">7</span>
+            <span class="stat-label">Conference Papers</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2 class="section-title">Skills & Expertise</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">🧲</div>
+          <h3>MRI Reconstruction</h3>
+          <p>Compressed Sensing, Parallel Imaging, Low-Rank Reconstruction, ESPIRiT, Wavelet Transform</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🤖</div>
+          <h3>Deep Learning</h3>
+          <p>PyTorch, TensorFlow, U-Net, Super-Resolution, Image Segmentation, Classification</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🧪</div>
+          <h3>Biomedical Signal Processing</h3>
+          <p>EEG Processing, Medical Image Analysis, Data Augmentation, Dictionary Learning</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🔧</div>
+          <h3>Programming & Tools</h3>
+          <p>Python, MATLAB, C#, LaTeX, 3D Slicer, ITK-SNAP</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2 class="section-title">Research Highlights</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-image">🧠</div>
+          <div class="project-info">
+            <h3>Calibrationless MRI Reconstruction</h3>
+            <p>Proposed a novel method for calibrationless reconstruction of uniformly-undersampled multi-channel MR data using deep learning estimated ESPIRiT maps. Published in Magnetic Resonance in Medicine.</p>
+            <div class="project-tags">
+              <span>MRI</span><span>Deep Learning</span><span>ESPIRiT</span><span>MRM 2023</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-image">💛</div>
+          <div class="project-info">
+            <h3>4D Cardiac MR Image Reconstruction</h3>
+            <p>Developed a deep learning reconstruction approach for 4D cardiac MR imaging using wavelet transform, presented at ISMRM 2023.</p>
+            <div class="project-tags">
+              <span>Cardiac MRI</span><span>Wavelet</span><span>Deep Learning</span><span>ISMRM 2023</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-image">🧬</div>
+          <div class="project-info">
+            <h3>Schizophrenia Detection with 3D Brain MRI</h3>
+            <p>Used deep learning on 3D structural brain MRI to detect schizophrenia, achieving Magna Cum Laude Merit Award at ISMRM 2022. Published in Scientific Reports.</p>
+            <div class="project-tags">
+              <span>Brain MRI</span><span>Classification</span><span>Scientific Reports 2023</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-image">🌐</div>
+          <div class="project-info">
+            <h3>0.055T Ultra-Low-Field MRI Reconstruction</h3>
+            <p>Working on super-resolution reconstruction and ultra-high-speed interventional imaging for 0.055T ultra-low-field MRI systems.</p>
+            <div class="project-tags">
+              <span>Ultra-Low-Field MRI</span><span>Super-Resolution</span><span>Interventional Imaging</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section experience">
+    <div class="container">
+      <h2 class="section-title">Education & Research Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2026 - Present</span>
+            <h3>Postdoctoral Research Fellow</h3>
+            <p class="timeline-company">The University of Hong Kong</p>
+            <p>Researching MRI reconstruction methods including compressed sensing, parallel imaging, and deep learning approaches for medical imaging.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2021 - 2026</span>
+            <h3>Ph.D. in Electrical and Electronic Engineering</h3>
+            <p class="timeline-company">The University of Hong Kong</p>
+            <p>Focused on magnetic resonance reconstruction, ultra-low-field MRI, and deep learning for medical imaging. Advisor: Prof. Ed X. Wu.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2019 - 2020</span>
+            <h3>M.S. in Biomedical Engineering</h3>
+            <p class="timeline-company">Columbia University</p>
+            <p>Research on brain tumor segmentation with data augmentation, facial expression recognition with dictionary learning, and image denoising. Advisors: Prof. Andrew Laine & Prof. Jia Guo.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2015 - 2019</span>
+            <h3>B.S. in Biomedical Engineering</h3>
+            <p class="timeline-company">Xi'an Jiaotong University (XJTU)</p>
+            <p>Research on seizure detection with unbalanced data and hand function rehabilitation systems using Unity3D. Advisor: Prof. Gang Wang. GPA: 3.4/4.0</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p>Interested in MRI reconstruction, medical imaging research, or collaboration opportunities? Feel free to reach out!</p>
+          <div class="contact-links">
+            <a href="mailto:junhaoz8888@gmail.com" class="contact-link">📧 junhaoz8888@gmail.com</a>
+            <a href="https://github.com/zhangjh705" class="contact-link" target="_blank">🐙 GitHub</a>
+            <a href="https://orcid.org/" class="contact-link" target="_blank">🎓 ORCID</a>
+            <a href="https://scholar.google.com/" class="contact-link" target="_blank">📚 Google Scholar</a>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 Junhao Zhang. Built with ❤️ and clean code.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
