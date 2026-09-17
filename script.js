@@ -18,7 +18,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
   navbar.style.boxShadow = window.scrollY > 50
-    ? '0 2px 20px rgba(0,0,0,0.3)'
+    ? '0 2px 20px rgba(0,0,0,0.08)'
     : 'none';
 });
 
