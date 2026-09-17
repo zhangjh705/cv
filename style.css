@@ -345,11 +345,13 @@ body {
 }
 
 .skill-card {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 24px;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 12px;
-  overflow: hidden;
+  padding: 20px;
   transition: var(--transition);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
 }
@@ -365,24 +367,25 @@ body {
 }
 
 .skill-icon-img {
-  display: block;
+  flex-shrink: 0;
 }
 
 .skill-icon-img img {
-  width: 100%;
-  height: 180px;
+  width: 220px;
+  height: 150px;
   object-fit: cover;
+  border-radius: 8px;
   display: block;
 }
 
 .skill-card h3 {
-  padding: 20px 24px 0;
   margin-bottom: 8px;
   font-size: 1.15rem;
 }
 
 .skill-card p {
-  padding: 0 24px 24px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
 }
 
 .skill-card h3 {
@@ -683,6 +686,12 @@ body {
   }
 
   .skill-icon-img img {
-    height: 150px;
+    width: 110px;
+    height: 110px;
+  }
+
+  .skill-card {
+    gap: 14px;
+    padding: 14px;
   }
 }
