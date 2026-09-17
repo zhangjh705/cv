@@ -340,15 +340,18 @@ body {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 24px;
+  grid-template-columns: 1fr;
+  gap: 16px;
 }
 
 .skill-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 12px;
-  padding: 32px 24px;
+  padding: 24px;
   transition: var(--transition);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
 }
@@ -367,8 +370,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70px;
-  margin-bottom: 16px;
+  flex-shrink: 0;
 }
 
 .skill-icon-img img {
@@ -674,5 +676,15 @@ body {
 
   .hero-name {
     font-size: 2rem;
+  }
+
+  .skill-card {
+    gap: 16px;
+    padding: 18px;
+  }
+
+  .skill-icon-img img {
+    width: 52px;
+    height: 52px;
   }
 }
