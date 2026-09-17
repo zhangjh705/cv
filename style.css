@@ -340,18 +340,19 @@ body {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
 }
 
 .skill-card {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 24px;
+  text-align: center;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 12px;
-  padding: 24px;
+  padding: 32px 20px;
   transition: var(--transition);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
 }
@@ -664,6 +665,10 @@ body {
     height: 160px;
   }
 
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .contact-grid {
     grid-template-columns: 1fr;
   }
@@ -678,13 +683,7 @@ body {
     font-size: 2rem;
   }
 
-  .skill-card {
-    gap: 16px;
-    padding: 18px;
-  }
-
-  .skill-icon-img img {
-    width: 52px;
-    height: 52px;
+  .skills-grid {
+    grid-template-columns: 1fr;
   }
 }
